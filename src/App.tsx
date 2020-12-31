@@ -1,27 +1,16 @@
-import './App.css';
+import style from './App.module.css';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
   Link
 } from 'react-router-dom';
 
-const Home = () => {
-  return <h2>Home</h2>;
-}
-
-const About = () => {
-  return <h2>About</h2>;
-}
-
-const Users = () => {
-  return <h2>Users</h2>;
-}
-
 function App() {
   return (
-    <Router>
-      <div>
+    <BrowserRouter>
+      <div className={ style.background }></div>
+      <div className={ style.container }>
         <nav>
           <ul>
             <li>
@@ -48,8 +37,20 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
+}
+
+const Home = () => {
+  return <h2>Home</h2>;
+}
+
+const About = () => {
+  return <h2>About</h2>;
+}
+
+const Users = () => {
+  return <h2>Users</h2>;
 }
 
 export default App;

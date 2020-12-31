@@ -1,0 +1,15 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  filter: blur(4px);
+  background: no-repeat center, center/100% url("assets/images/night-station.jpg");
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(11, 136, 134, 0.3);
+}
+
