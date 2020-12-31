@@ -12,7 +12,7 @@ function App() {
       <div className={ style.background }></div>
       <div className={ style.container }>
         <nav>
-          <ul>
+          <ul className={ style.navigation }>
             <li>
               <Link to='/'>HOME</Link>
             </li>
@@ -20,7 +20,16 @@ function App() {
               <Link to='/about'>ABOUT ME</Link>
             </li>
             <li>
-              <Link to='/users'>Users</Link>
+              <Link to='/about'>LINKS</Link>
+            </li>
+            <li>
+              <Link to='/users'>PROJECTS</Link>
+            </li>
+            <li>
+              <Link to='/users'>LIKES</Link>
+            </li>
+            <li>
+              <Link to='/users'>EXTRA</Link>
             </li>
           </ul>
         </nav>

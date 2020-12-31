@@ -13,3 +13,17 @@
   background: rgb(11, 136, 134, 0.3);
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+.navigation li {
+  margin: 0 2.8rem;
+}
+
+.navigation li a {
+  line-height: 5rem;
+  font-size: 1.15rem;
+}
