@@ -7,7 +7,7 @@ export function AboutMe() {
       <section className={ cardStyle['card-container'] }>
         <h1 className={ cardStyle.title }>ABOUT ME</h1>
         <p className={ cardStyle.contents }>
-          インターネットでは ybrliiu / mp0liiu というidで活動していることが多いです。<br />
+          ybrliiu / mp0liiu というIDでインターネット上で活動をしています。<br />
           東京のIT系の会社でソフトウェアエンジニアをしています。<br />
           仕事ではWebアプリケーションのサーバーサイドをいじっていることが多いです。<br />
           好きな言語は Perl と TypeScript です。<br />
