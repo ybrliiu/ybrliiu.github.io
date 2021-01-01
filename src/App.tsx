@@ -104,7 +104,7 @@ class App extends React.Component {
           </nav>
   
           <Switch>
-            <div  className={ style['contents-container'] }>
+            <div className={ style['contents-container'] }>
               <Route path='/' exact>
                 <Home />
               </Route>
