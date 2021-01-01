@@ -7,7 +7,7 @@ export function FallBack() {
       <section className={ cardStyle["card-container"] }>
         <h1 className={ cardStyle.title }>工事中！</h1>
         <p className={ cardStyle.contents }>
-          気が向いたら書きます
+          気が向いたら書きます...
         </p>
       </section>
     </article>
