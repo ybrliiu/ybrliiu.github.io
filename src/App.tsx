@@ -7,6 +7,7 @@ import {
   Link
 } from 'react-router-dom';
 import { Home } from './components/home';
+import { AboutMe } from './components/about-me';
 
 type NavLinkProps = {
   name: string,
@@ -51,7 +52,6 @@ class App extends React.Component {
 
   clickNavLink(page: Page) {
     this.setState({
-
       currentPageName: page.name,
     })
   }
@@ -83,29 +83,20 @@ class App extends React.Component {
           </nav>
   
           <Switch>
-            <Route path='/about' exact>
-              <About />
-            </Route>
-            <Route path='/users' exact>
-              <Users />
-            </Route>
-            <Route path='/' exact>
-              <Home />
-            </Route>
+            <div  className={ style['contents-container'] }>
+              <Route path='/' exact>
+                <Home />
+              </Route>
+              <Route path='/about-me' exact>
+                <AboutMe />
+              </Route>
+            </div>
           </Switch>
         </div>
       </BrowserRouter>
     );    
   }
 
-}
-
-const About = () => {
-  return <h2>About</h2>;
-}
-
-const Users = () => {
-  return <h2>Users</h2>;
 }
 
 export default App;

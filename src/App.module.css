@@ -3,7 +3,8 @@
   width: 100%;
   height: 100vh;
   filter: blur(4px);
-  background: no-repeat center, center/100% url("assets/images/night-station.jpg");
+  background: no-repeat center,
+    center/100% url("assets/images/night-station.jpg");
 }
 
 .container {
@@ -25,18 +26,18 @@
 
 .navigation li a {
   position: relative;
-  color:#f0fff0;
+  color: #f0fff0;
   line-height: 5rem;
   font-size: 1.15rem;
 }
 
 .navigation li a:hover {
-  -webkit-text-fill-color:#f0fff0;
+  -webkit-text-fill-color: #f0fff0;
   -webkit-text-stroke: 0.5px #04dbda;
 }
 
 .navigation li a::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #04dbda;
   width: 0%;
@@ -50,10 +51,15 @@
 }
 
 .current-page {
-  -webkit-text-fill-color:#f0fff0;
-  -webkit-text-stroke: 0.5px #04dbda;  
+  -webkit-text-fill-color: #f0fff0;
+  -webkit-text-stroke: 0.5px #04dbda;
 }
 
 .current-page::before {
   width: 100% !important;
+}
+
+.contents-container {
+  width: 100%;
+  height: calc(100% - 5rem);
 }

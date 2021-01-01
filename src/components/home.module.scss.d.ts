@@ -1,5 +1,4 @@
 declare const style = {
-  container: string,
   icon: string,
   name: string,
 };

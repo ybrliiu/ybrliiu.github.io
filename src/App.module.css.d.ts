@@ -3,5 +3,6 @@ declare const style = {
   container: string,
   navigation: string,
   'current-page': string,
+  'contents-container': string,
 };
 export default style;
