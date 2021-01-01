@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { Home } from './components/home';
 import { AboutMe } from './components/about-me';
+import { Links } from './components/links';
 
 type NavLinkProps = {
   name: string,
@@ -110,6 +111,9 @@ class App extends React.Component {
               </Route>
               <Route path='/about-me' exact>
                 <AboutMe />
+              </Route>
+              <Route path='/links' exact>
+                <Links />
               </Route>
             </div>
           </Switch>

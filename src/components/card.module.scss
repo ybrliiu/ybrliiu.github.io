@@ -19,5 +19,17 @@
     margin: 10px;
     font-size: 1rem;
     line-height: 1.7rem;
+
+    li {
+      list-style: disc inside;
+
+      a {
+        color: #04dbda;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
