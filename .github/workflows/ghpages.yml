@@ -26,11 +26,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
-
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.FOR_GITHUB_ACTIONS }}
-        publish_branch: master
-        publish_dir: ./docs
+        publish_branch: gh-pages
+        publish_dir: ./build
+        cname: liiu.dev
