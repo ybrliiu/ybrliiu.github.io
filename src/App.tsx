@@ -9,6 +9,7 @@ import {
 import { Home } from './components/home';
 import { AboutMe } from './components/about-me';
 import { Links } from './components/links';
+import { FallBack } from './components/fallback';
 
 type NavLinkProps = {
   name: string,
@@ -114,6 +115,15 @@ class App extends React.Component {
               </Route>
               <Route path='/links' exact>
                 <Links />
+              </Route>
+              <Route path='/projects' exact>
+                <FallBack />
+              </Route>
+              <Route path='/likes' exact>
+                <FallBack />
+              </Route>
+              <Route path='/extra' exact>
+                <FallBack />
               </Route>
             </div>
           </Switch>
