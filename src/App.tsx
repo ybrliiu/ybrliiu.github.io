@@ -30,7 +30,35 @@ function NavLink(props: NavLinkProps) {
   );
 }
 
+function fetchCurrentPathName() :string {
+  const segments = window.location.pathname.split('/');
+  return segments[ segments.length - 1 ];
+}
+
 type Page = { linkTo: string, name: string };
+
+const pages: Page[] = [
+  { name: 'HOME', linkTo: '' },
+  { name: 'ABOUT ME', linkTo: 'about-me' },
+  { name: 'LINKS', linkTo: 'links' },
+  { name: 'PROJECTS', linkTo: 'projects' },
+  { name: 'LIKES', linkTo: 'likes' },
+  { name: 'EXTRA', linkTo: 'extra' },
+];
+
+function initialPageName() :string {
+  const pathName = fetchCurrentPathName();
+  const map = new Map<string, string>();
+  for (let page of pages) {
+    map.set(page.linkTo, page.name);
+  }
+  const pageName = map.get(pathName);
+  if (pageName === undefined) {
+    throw new Error('ページの定義がないです');
+  }
+  return pageName;
+}
+
 class App extends React.Component {
 
   state: { pages: Page[]; currentPageName: string; };
@@ -38,15 +66,8 @@ class App extends React.Component {
   constructor(props: any) {
     super(props);
     this.state = {
-      pages: [
-        { name: 'HOME', linkTo: '' },
-        { name: 'ABOUT ME', linkTo: 'about-me' },
-        { name: 'LINKS', linkTo: 'links' },
-        { name: 'PROJECTS', linkTo: 'projects' },
-        { name: 'LIKES', linkTo: 'likes' },
-        { name: 'EXTRA', linkTo: 'extra' },
-      ],
-      currentPageName: 'HOME',
+      pages: pages,
+      currentPageName: initialPageName(),
     };
   }
 
