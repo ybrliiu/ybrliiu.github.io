@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import { Home } from './components/home';
 
 type NavLinkProps = {
   name: string,
@@ -97,10 +98,6 @@ class App extends React.Component {
     );    
   }
 
-}
-
-const Home = () => {
-  return <h2>Home</h2>;
 }
 
 const About = () => {
