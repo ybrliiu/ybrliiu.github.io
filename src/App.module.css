@@ -20,6 +20,12 @@
   height: 5rem;
 }
 
+@media (max-width: 950px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation li {
   margin: 0 2.8rem;
 }
