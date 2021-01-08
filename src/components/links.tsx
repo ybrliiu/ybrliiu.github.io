@@ -6,6 +6,7 @@ export function Links() {
     { name: 'Twitter', url: 'https://twitter.com/_ybrliiu' },
     { name: 'Github', url: 'https://github.com/ybrliiu' },
     { name: 'Blog', url: 'https://mp0liiu.hatenablog.com/' },
+    { name: 'Scrapbox', url: 'https://scrapbox.io/ybrliiu-worklog/' },
     { name: 'Speaker Deck', url: 'https://speakerdeck.com/ybrliiu' },
     { name: 'CPAN', url: 'https://metacpan.org/author/MPOLIIU' },
   ];
